@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { siteConfig } from "@/data/site";
 
@@ -52,7 +53,15 @@ export default function Contact() {
             {siteConfig.contact.address}
           </p>
           {/* Harita / ek görsel alanı */}
-          <div className="aspect-video rounded-xl bg-neutral-100 dark:bg-neutral-900" />
+          <div className="relative aspect-video overflow-hidden rounded-xl bg-neutral-100 dark:bg-neutral-900">
+            <Image
+              src={siteConfig.contactImage}
+              alt="Hong Kong skyline at night"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>

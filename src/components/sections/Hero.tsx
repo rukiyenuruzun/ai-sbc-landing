@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { siteConfig } from "@/data/site";
 
 export default function Hero() {
@@ -24,7 +25,16 @@ export default function Hero() {
       </div>
 
       {/* Hero görseli / animasyon alanı — tasarımı burada kurgulayın */}
-      <div className="mt-16 aspect-[2/1] w-full max-w-4xl rounded-2xl bg-neutral-100 dark:bg-neutral-900" />
+      <div className="relative mt-16 aspect-[2/1] w-full max-w-4xl overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-900">
+        <Image
+          src={siteConfig.heroImage}
+          alt="Circuit board close-up"
+          fill
+          priority
+          sizes="(min-width: 1024px) 896px, 100vw"
+          className="object-cover"
+        />
+      </div>
     </section>
   );
 }
