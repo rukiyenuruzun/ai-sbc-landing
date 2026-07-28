@@ -1,14 +1,25 @@
 // Tüm sayfa içeriği tek yerden yönetilir; arayüzü tasarlarken sadece burayı doldurmanız yeterli.
 
 export const siteConfig = {
-  name: "ŞİRKET ADI",
+  name: "Velora",
+  legalName: "Velora Tech Limited (HK)",
   tagline: "AI donanımı, AI yazılımı ve SBC çözümleri",
   description:
-    "AI hardware satan, AI yazılımları üreten, SBC (single board computer) ve aksesuarlarını sunan teknoloji şirketi.",
+    "Velora Tech Limited (HK) — AI hardware, AI yazılımları, SBC (single board computer) ve aksesuarları tedarik eden Hong Kong merkezli teknoloji şirketi.",
+  logo: {
+    full: "/velora-logo-full.png", // yatay logo (amblem + yazı)
+    mark: "/velora-mark.png", // sadece amblem
+    svg: "/velora-logo.svg",
+  },
   contact: {
-    email: "info@example.com",
-    phone: "+90 000 000 00 00",
-    address: "Adres bilgisi",
+    email: "hello@velora.com.hk",
+    address:
+      "Unit 2904-05, 29/F, Universal Trade Centre, 3 Arbuthnot Road, Central, Hong Kong",
+  },
+  // Resmî faaliyet kodları (footer'da gösteriliyor)
+  activities: {
+    primary: "[460699] Wholesale of machinery and equipment n.e.c. (except furniture)",
+    secondary: "[451601] Export trading of computers and computer peripheral equipment",
   },
   socials: [
     { label: "GitHub", href: "#" },

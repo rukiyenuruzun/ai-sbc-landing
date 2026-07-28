@@ -34,7 +34,7 @@ export default function Contact() {
           />
           <button
             type="submit"
-            className="rounded-lg bg-indigo-600 px-6 py-3 font-medium text-white hover:bg-indigo-500"
+            className="rounded-lg bg-orange-600 px-6 py-3 font-medium text-white hover:bg-orange-500"
           >
             Gönder
           </button>
@@ -43,11 +43,9 @@ export default function Contact() {
         <div className="space-y-4 text-sm text-neutral-500">
           <p>
             <span className="font-semibold text-neutral-900 dark:text-white">E-posta:</span>{" "}
-            {siteConfig.contact.email}
-          </p>
-          <p>
-            <span className="font-semibold text-neutral-900 dark:text-white">Telefon:</span>{" "}
-            {siteConfig.contact.phone}
+            <a href={`mailto:${siteConfig.contact.email}`} className="hover:underline">
+              {siteConfig.contact.email}
+            </a>
           </p>
           <p>
             <span className="font-semibold text-neutral-900 dark:text-white">Adres:</span>{" "}

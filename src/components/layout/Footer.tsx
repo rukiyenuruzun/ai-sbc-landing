@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { navLinks, siteConfig } from "@/data/site";
 
 export default function Footer() {
@@ -5,8 +6,23 @@ export default function Footer() {
     <footer className="border-t border-neutral-200 dark:border-neutral-800">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:grid-cols-3">
         <div>
-          <p className="font-bold">{siteConfig.name}</p>
+          <div className="flex items-center gap-2">
+            <Image
+              src={siteConfig.logo.mark}
+              alt={`${siteConfig.name} logo`}
+              width={28}
+              height={28}
+            />
+            <p className="font-bold">{siteConfig.name}</p>
+          </div>
           <p className="mt-2 text-sm text-neutral-500">{siteConfig.tagline}</p>
+          <p className="mt-4 text-xs text-neutral-500">{siteConfig.contact.address}</p>
+          <a
+            href={`mailto:${siteConfig.contact.email}`}
+            className="mt-1 block text-xs text-neutral-500 hover:underline"
+          >
+            {siteConfig.contact.email}
+          </a>
         </div>
 
         <nav aria-label="Alt menü">
@@ -36,9 +52,14 @@ export default function Footer() {
         </div>
       </div>
 
-      <p className="border-t border-neutral-200 py-4 text-center text-xs text-neutral-500 dark:border-neutral-800">
-        © {new Date().getFullYear()} {siteConfig.name}. Tüm hakları saklıdır.
-      </p>
+      <div className="border-t border-neutral-200 py-4 text-center dark:border-neutral-800">
+        <p className="text-xs text-neutral-500">
+          © {new Date().getFullYear()} {siteConfig.legalName}. Tüm hakları saklıdır.
+        </p>
+        <p className="mt-1 text-[10px] text-neutral-400">
+          {siteConfig.activities.primary} · {siteConfig.activities.secondary}
+        </p>
+      </div>
     </footer>
   );
 }

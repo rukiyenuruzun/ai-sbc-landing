@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { navLinks, siteConfig } from "@/data/site";
 
 export default function Navbar() {
@@ -10,7 +11,13 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/80 backdrop-blur dark:border-neutral-800 dark:bg-neutral-950/80">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-        <Link href="#" className="text-lg font-bold">
+        <Link href="#" className="flex items-center gap-2 text-lg font-bold">
+          <Image
+            src={siteConfig.logo.mark}
+            alt={`${siteConfig.name} logo`}
+            width={32}
+            height={32}
+          />
           {siteConfig.name}
         </Link>
 
@@ -26,7 +33,7 @@ export default function Navbar() {
           <li>
             <a
               href="#contact"
-              className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-500"
+              className="rounded-lg bg-orange-600 px-4 py-2 text-sm font-medium text-white hover:bg-orange-500"
             >
               Teklif Al
             </a>

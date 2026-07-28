@@ -15,7 +15,7 @@ export default function About() {
         <div className="mt-12 grid gap-8 text-center sm:grid-cols-3">
           {stats.map((s) => (
             <div key={s.label}>
-              <p className="text-4xl font-bold text-indigo-500">{s.value}</p>
+              <p className="text-4xl font-bold text-orange-500">{s.value}</p>
               <p className="mt-1 text-sm text-neutral-500">{s.label}</p>
             </div>
           ))}

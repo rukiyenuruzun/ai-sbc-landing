@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="mt-8 flex gap-4">
         <a
           href="#ai-hardware"
-          className="rounded-lg bg-indigo-600 px-6 py-3 font-medium text-white hover:bg-indigo-500"
+          className="rounded-lg bg-orange-600 px-6 py-3 font-medium text-white hover:bg-orange-500"
         >
           Ürünleri Keşfet
         </a>

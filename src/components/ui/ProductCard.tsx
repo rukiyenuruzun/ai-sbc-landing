@@ -9,7 +9,7 @@ export default function ProductCard({ product }: { product: Product }) {
       <div className="flex items-center gap-2">
         <h3 className="text-lg font-semibold">{product.name}</h3>
         {product.tag && (
-          <span className="rounded-full bg-indigo-500/10 px-2 py-0.5 text-xs text-indigo-500">
+          <span className="rounded-full bg-orange-500/10 px-2 py-0.5 text-xs text-orange-500">
             {product.tag}
           </span>
         )}
