@@ -31,6 +31,25 @@ export const siteConfig = {
   ],
 };
 
+// Hero başlığında dönen kelimeler
+export const heroRotatingWords = ["AI Hardware", "AI Software", "Edge Computing", "SBC Systems"];
+
+// Hero altındaki kayan şerit
+export const techMarquee = [
+  "Edge AI",
+  "Computer Vision",
+  "LLM Inference",
+  "CUDA",
+  "RISC-V",
+  "ARM",
+  "Robotics",
+  "IoT",
+  "TinyML",
+  "NPU",
+  "Single Board Computers",
+  "Model Deployment",
+];
+
 // Navbar'daki linkler sayfa içi anchor'lara gider (single page).
 export const navLinks = [
   { label: "AI Hardware", href: "#ai-hardware" },
@@ -114,7 +133,7 @@ export const sbcProducts: Product[] = [
 ];
 
 export const stats = [
-  { value: "100+", label: "Products" },
-  { value: "50+", label: "Enterprise Clients" },
-  { value: "10+", label: "Years of Experience" },
+  { value: 100, suffix: "+", label: "Products" },
+  { value: 50, suffix: "+", label: "Enterprise Clients" },
+  { value: 10, suffix: "+", label: "Years of Experience" },
 ];

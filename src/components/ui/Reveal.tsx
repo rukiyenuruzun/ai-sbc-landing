@@ -10,14 +10,14 @@ type RevealProps = {
   className?: string;
 };
 
-// Bölümler görünüme girerken fade + yukarı kayma efekti. Bir kez oynar.
-export default function Reveal({ children, delay = 0, y = 24, className }: RevealProps) {
+// Görünüme girerken blur'dan netleşerek yukarı süzülme — sert "şerit" hissi yerine akışkan giriş.
+export default function Reveal({ children, delay = 0, y = 32, className }: RevealProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.6, delay, ease: "easeOut" }}
+      initial={{ opacity: 0, y, filter: "blur(10px)" }}
+      whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+      viewport={{ once: true, amount: 0.25, margin: "0px 0px -60px 0px" }}
+      transition={{ duration: 0.9, delay, ease: [0.22, 1, 0.36, 1] }}
       className={className}
     >
       {children}

@@ -5,7 +5,7 @@ import { aiSoftware } from "@/data/site";
 
 export default function AiSoftware() {
   return (
-    <section id="ai-software" className="scroll-mt-20 bg-neutral-50 py-20 dark:bg-neutral-900/40">
+    <section id="ai-software" className="scroll-mt-20 py-20">
       <div className="mx-auto max-w-6xl px-4">
         <Reveal>
           <SectionHeading

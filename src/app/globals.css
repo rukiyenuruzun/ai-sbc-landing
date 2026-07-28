@@ -12,6 +12,32 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Özel animasyonlar — animate-marquee, animate-shimmer, animate-float olarak kullanılır */
+@theme {
+  --animate-marquee: marquee 32s linear infinite;
+  --animate-shimmer: shimmer 3s linear infinite;
+  --animate-float: float 14s ease-in-out infinite alternate;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes shimmer {
+    to {
+      background-position: 200% center;
+    }
+  }
+  @keyframes float {
+    from {
+      transform: translate(0, 0) scale(1);
+    }
+    to {
+      transform: translate(40px, -30px) scale(1.15);
+    }
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
