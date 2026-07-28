@@ -1,23 +1,26 @@
 import SectionHeading from "@/components/ui/SectionHeading";
+import Reveal from "@/components/ui/Reveal";
 import { stats } from "@/data/site";
 
 export default function About() {
   return (
     <section id="about" className="scroll-mt-20 bg-neutral-50 py-20 dark:bg-neutral-900/40">
       <div className="mx-auto max-w-6xl px-4">
-        <SectionHeading
-          eyebrow="About"
-          title="Why Velora?"
-          subtitle="Company story and value proposition go here."
-        />
+        <Reveal>
+          <SectionHeading
+            eyebrow="About"
+            title="Why Velora?"
+            subtitle="Company story and value proposition go here."
+          />
+        </Reveal>
 
         {/* İstatistik şeridi */}
         <div className="mt-12 grid gap-8 text-center sm:grid-cols-3">
-          {stats.map((s) => (
-            <div key={s.label}>
+          {stats.map((s, i) => (
+            <Reveal key={s.label} delay={i * 0.1}>
               <p className="text-4xl font-bold text-orange-500">{s.value}</p>
               <p className="mt-1 text-sm text-neutral-500">{s.label}</p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>
