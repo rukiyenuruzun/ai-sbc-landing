@@ -10,7 +10,7 @@ export default function ExpandingPanels({ items }: { items: Product[] }) {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="flex flex-col gap-2 md:h-[440px] md:flex-row">
+    <div className="flex flex-col gap-2 md:h-[520px] md:flex-row">
       {items.map((p, i) => {
         const isActive = i === active;
         return (

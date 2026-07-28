@@ -52,9 +52,7 @@ export const techMarquee = [
 
 // Navbar'daki linkler sayfa içi anchor'lara gider (single page).
 export const navLinks = [
-  { label: "AI Hardware", href: "#ai-hardware" },
-  { label: "AI Software", href: "#ai-software" },
-  { label: "SBC & Accessories", href: "#sbc" },
+  { label: "Products", href: "#products" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
@@ -64,71 +62,28 @@ export type Product = {
   name: string;
   description: string;
   image?: string; // /public altına koyacağınız görselin yolu
-  tag?: string; // "New", "Popular" vb.
 };
 
-export const aiHardware: Product[] = [
+// Ana ürün kategorileri — genişleyen panellerde yan yana gösterilir.
+// Alt kategori / ürün detayı şimdilik yok.
+export const categories: Product[] = [
   {
-    id: "hw-1",
-    name: "AI Accelerator Placeholder",
-    description: "Edge AI accelerator card description.",
-    image: "/images/hw-accelerator.jpg",
-    tag: "Popular",
-  },
-  {
-    id: "hw-2",
-    name: "GPU Module Placeholder",
-    description: "High-performance GPU module description.",
+    id: "ai-hardware",
+    name: "Hardware Built for AI",
+    description: "Hardware solutions for AI workloads, from the edge to the data center.",
     image: "/images/hw-gpu.jpg",
   },
   {
-    id: "hw-3",
-    name: "AI Camera Placeholder",
-    description: "Smart camera for computer vision description.",
-    image: "/images/hw-camera.jpg",
-  },
-];
-
-export const aiSoftware: Product[] = [
-  {
-    id: "sw-1",
-    name: "Model Deployment Platform",
-    description: "Software for deploying models to edge devices.",
-    image: "/images/sw-deploy.jpg",
-  },
-  {
-    id: "sw-2",
-    name: "Vision SDK",
-    description: "Computer vision SDK description.",
-    image: "/images/sw-vision.png",
-  },
-  {
-    id: "sw-3",
-    name: "Custom AI Solutions",
-    description: "Tailor-made AI software development services.",
+    id: "ai-software",
+    name: "Software We Build",
+    description: "In-house AI software products and custom enterprise solutions.",
     image: "/images/sw-custom.jpg",
   },
-];
-
-export const sbcProducts: Product[] = [
   {
-    id: "sbc-1",
-    name: "SBC Model Placeholder",
-    description: "Single board computer description.",
+    id: "sbc",
+    name: "Single Board Computers & Accessories",
+    description: "SBCs, expansion boards, cases and all the accessories around them.",
     image: "/images/sbc-board.jpg",
-    tag: "New",
-  },
-  {
-    id: "sbc-2",
-    name: "Cooling / Case Accessory",
-    description: "SBC accessory description.",
-    image: "/images/sbc-case.jpg",
-  },
-  {
-    id: "sbc-3",
-    name: "Expansion Board",
-    description: "HAT / expansion board description.",
-    image: "/images/sbc-hat.jpg",
   },
 ];
 

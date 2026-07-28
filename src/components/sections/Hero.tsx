@@ -29,7 +29,7 @@ export default function Hero() {
       <Reveal delay={0.24}>
         <div className="mt-10 flex flex-wrap gap-4">
           <a
-            href="#ai-hardware"
+            href="#products"
             className="bg-accent px-6 py-3 text-xs font-medium uppercase tracking-[0.18em] text-ink transition-colors hover:bg-paper"
           >
             Explore Products

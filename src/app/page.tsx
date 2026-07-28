@@ -1,9 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
-import AiHardware from "@/components/sections/AiHardware";
-import AiSoftware from "@/components/sections/AiSoftware";
-import SbcAccessories from "@/components/sections/SbcAccessories";
+import Products from "@/components/sections/Products";
 import About from "@/components/sections/About";
 import Contact from "@/components/sections/Contact";
 import Marquee from "@/components/ui/Marquee";
@@ -16,9 +14,7 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <Marquee items={techMarquee} />
-        <AiHardware />
-        <AiSoftware />
-        <SbcAccessories />
+        <Products />
         <About />
         <Contact />
       </main>
