@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/ui/Reveal";
 import CountUp from "@/components/ui/CountUp";
@@ -5,8 +6,22 @@ import { stats } from "@/data/site";
 
 export default function About() {
   return (
-    <section id="about" className="scroll-mt-20 border-y border-paper/15 py-24">
-      <div className="mx-auto max-w-6xl px-5">
+    <section id="about" className="relative scroll-mt-20 overflow-hidden border-y border-paper/15 py-28">
+      {/* Arka plan görseli — tek renge (lacivert) çekilip zemine gömülür,
+          kenarlardan ink'e eriyerek kaybolur. Kaldırmak istersen bu div'i sil. */}
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <Image
+          src="/images/about-bg.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover object-[center_30%] opacity-25 grayscale contrast-125 mix-blend-luminosity"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink via-ink/35 to-ink" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink via-transparent to-ink" />
+      </div>
+
+      <div className="relative mx-auto max-w-6xl px-5">
         <Reveal>
           <SectionHeading
             eyebrow="About"
