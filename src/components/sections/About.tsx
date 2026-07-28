@@ -11,11 +11,11 @@ export default function About() {
           kenarlardan ink'e eriyerek kaybolur. Kaldırmak istersen bu div'i sil. */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <Image
-          src="/images/about-bg.jpg"
+          src="/images/about-bg.webp"
           alt=""
           fill
           sizes="100vw"
-          className="object-cover object-[center_30%] opacity-25 grayscale contrast-125 mix-blend-luminosity"
+          className="object-cover object-center opacity-25 grayscale contrast-125 mix-blend-luminosity"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-ink via-ink/35 to-ink" />
         <div className="absolute inset-0 bg-gradient-to-r from-ink via-transparent to-ink" />
