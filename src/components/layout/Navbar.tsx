@@ -2,30 +2,28 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { navLinks, siteConfig } from "@/data/site";
+import VeloraMark from "@/components/ui/VeloraMark";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false); // mobil menü durumu
 
   return (
-    <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/80 backdrop-blur dark:border-neutral-800 dark:bg-neutral-950/80">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-        <Link href="#" className="flex items-center gap-2 text-lg font-bold">
-          <Image
-            src={siteConfig.logo.mark}
-            alt={`${siteConfig.name} logo`}
-            width={32}
-            height={32}
-          />
-          {siteConfig.name}
+    <header className="sticky top-0 z-40 border-b border-paper/15 bg-ink/90 backdrop-blur-sm">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+        <Link href="#" className="group flex items-center gap-3">
+          <VeloraMark size={30} />
+          <span className="font-display text-2xl tracking-wide">{siteConfig.name}</span>
         </Link>
 
         {/* Masaüstü menü */}
-        <ul className="hidden items-center gap-6 md:flex">
+        <ul className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a href={link.href} className="text-sm text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-white">
+              <a
+                href={link.href}
+                className="text-xs font-medium uppercase tracking-[0.18em] text-paper/70 transition-colors hover:text-paper"
+              >
                 {link.label}
               </a>
             </li>
@@ -33,7 +31,7 @@ export default function Navbar() {
           <li>
             <a
               href="#contact"
-              className="rounded-lg bg-orange-600 px-4 py-2 text-sm font-medium text-white hover:bg-orange-500"
+              className="border border-accent px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-accent transition-colors hover:bg-accent hover:text-ink"
             >
               Get a Quote
             </a>
@@ -43,7 +41,7 @@ export default function Navbar() {
         {/* Mobil menü butonu */}
         <button
           type="button"
-          className="md:hidden"
+          className="text-paper md:hidden"
           aria-expanded={open}
           aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
@@ -54,10 +52,14 @@ export default function Navbar() {
 
       {/* Mobil menü */}
       {open && (
-        <ul className="space-y-2 border-t border-neutral-200 px-4 py-4 md:hidden dark:border-neutral-800">
+        <ul className="space-y-3 border-t border-paper/15 px-5 py-5 md:hidden">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a href={link.href} onClick={() => setOpen(false)} className="block py-1 text-sm">
+              <a
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="block text-xs uppercase tracking-[0.18em] text-paper/80"
+              >
                 {link.label}
               </a>
             </li>
