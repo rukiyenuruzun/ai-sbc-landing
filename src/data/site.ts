@@ -3,9 +3,9 @@
 export const siteConfig = {
   name: "Velora",
   legalName: "Velora Tech Limited (HK)",
-  tagline: "AI donanımı, AI yazılımı ve SBC çözümleri",
+  tagline: "AI hardware, AI software & SBC solutions",
   description:
-    "Velora Tech Limited (HK) — AI hardware, AI yazılımları, SBC (single board computer) ve aksesuarları tedarik eden Hong Kong merkezli teknoloji şirketi.",
+    "Velora Tech Limited (HK) — a Hong Kong based technology company supplying AI hardware, AI software, single board computers (SBC) and accessories.",
   logo: {
     full: "/velora-logo-full.png", // yatay logo (amblem + yazı)
     mark: "/velora-mark.png", // sadece amblem
@@ -30,11 +30,11 @@ export const siteConfig = {
 
 // Navbar'daki linkler sayfa içi anchor'lara gider (single page).
 export const navLinks = [
-  { label: "AI Donanım", href: "#ai-hardware" },
-  { label: "AI Yazılım", href: "#ai-software" },
-  { label: "SBC & Aksesuar", href: "#sbc" },
-  { label: "Hakkımızda", href: "#about" },
-  { label: "İletişim", href: "#contact" },
+  { label: "AI Hardware", href: "#ai-hardware" },
+  { label: "AI Software", href: "#ai-software" },
+  { label: "SBC & Accessories", href: "#sbc" },
+  { label: "About", href: "#about" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export type Product = {
@@ -42,43 +42,43 @@ export type Product = {
   name: string;
   description: string;
   image?: string; // /public altına koyacağınız görselin yolu
-  tag?: string; // "Yeni", "Popüler" vb.
+  tag?: string; // "New", "Popular" vb.
 };
 
 export const aiHardware: Product[] = [
   {
     id: "hw-1",
     name: "AI Accelerator Placeholder",
-    description: "Edge AI hızlandırıcı kartı açıklaması.",
-    tag: "Popüler",
+    description: "Edge AI accelerator card description.",
+    tag: "Popular",
   },
   {
     id: "hw-2",
-    name: "GPU Modülü Placeholder",
-    description: "Yüksek performanslı GPU modülü açıklaması.",
+    name: "GPU Module Placeholder",
+    description: "High-performance GPU module description.",
   },
   {
     id: "hw-3",
-    name: "AI Kamera Placeholder",
-    description: "Görüntü işleme odaklı akıllı kamera açıklaması.",
+    name: "AI Camera Placeholder",
+    description: "Smart camera for computer vision description.",
   },
 ];
 
 export const aiSoftware: Product[] = [
   {
     id: "sw-1",
-    name: "Model Deployment Platformu",
-    description: "Edge cihazlara model dağıtım yazılımı açıklaması.",
+    name: "Model Deployment Platform",
+    description: "Software for deploying models to edge devices.",
   },
   {
     id: "sw-2",
     name: "Vision SDK",
-    description: "Görüntü işleme SDK açıklaması.",
+    description: "Computer vision SDK description.",
   },
   {
     id: "sw-3",
-    name: "Özel AI Çözümleri",
-    description: "Kuruma özel AI yazılım geliştirme hizmeti açıklaması.",
+    name: "Custom AI Solutions",
+    description: "Tailor-made AI software development services.",
   },
 ];
 
@@ -86,23 +86,23 @@ export const sbcProducts: Product[] = [
   {
     id: "sbc-1",
     name: "SBC Model Placeholder",
-    description: "Single board computer açıklaması.",
-    tag: "Yeni",
+    description: "Single board computer description.",
+    tag: "New",
   },
   {
     id: "sbc-2",
-    name: "Soğutucu / Kasa Aksesuarı",
-    description: "SBC aksesuarı açıklaması.",
+    name: "Cooling / Case Accessory",
+    description: "SBC accessory description.",
   },
   {
     id: "sbc-3",
-    name: "Genişletme Kartı",
-    description: "HAT / genişletme kartı açıklaması.",
+    name: "Expansion Board",
+    description: "HAT / expansion board description.",
   },
 ];
 
 export const stats = [
-  { value: "100+", label: "Ürün" },
-  { value: "50+", label: "Kurumsal Müşteri" },
-  { value: "10+", label: "Yıllık Deneyim" },
+  { value: "100+", label: "Products" },
+  { value: "50+", label: "Enterprise Clients" },
+  { value: "10+", label: "Years of Experience" },
 ];

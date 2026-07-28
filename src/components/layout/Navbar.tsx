@@ -35,7 +35,7 @@ export default function Navbar() {
               href="#contact"
               className="rounded-lg bg-orange-600 px-4 py-2 text-sm font-medium text-white hover:bg-orange-500"
             >
-              Teklif Al
+              Get a Quote
             </a>
           </li>
         </ul>
@@ -45,7 +45,7 @@ export default function Navbar() {
           type="button"
           className="md:hidden"
           aria-expanded={open}
-          aria-label="Menüyü aç/kapat"
+          aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
         >
           ☰

@@ -5,9 +5,9 @@ export default function Contact() {
   return (
     <section id="contact" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-20">
       <SectionHeading
-        eyebrow="İletişim"
-        title="Bize Ulaşın"
-        subtitle="Projeleriniz ve ürün talepleriniz için bizimle iletişime geçin."
+        eyebrow="Contact"
+        title="Get in Touch"
+        subtitle="Reach out for your projects and product inquiries."
       />
 
       <div className="mt-12 grid gap-12 lg:grid-cols-2">
@@ -17,18 +17,18 @@ export default function Contact() {
           <input
             type="text"
             name="name"
-            placeholder="Ad Soyad"
+            placeholder="Full Name"
             className="w-full rounded-lg border border-neutral-300 px-4 py-3 dark:border-neutral-700 dark:bg-neutral-900"
           />
           <input
             type="email"
             name="email"
-            placeholder="E-posta"
+            placeholder="Email"
             className="w-full rounded-lg border border-neutral-300 px-4 py-3 dark:border-neutral-700 dark:bg-neutral-900"
           />
           <textarea
             name="message"
-            placeholder="Mesajınız"
+            placeholder="Your Message"
             rows={5}
             className="w-full rounded-lg border border-neutral-300 px-4 py-3 dark:border-neutral-700 dark:bg-neutral-900"
           />
@@ -36,19 +36,19 @@ export default function Contact() {
             type="submit"
             className="rounded-lg bg-orange-600 px-6 py-3 font-medium text-white hover:bg-orange-500"
           >
-            Gönder
+            Send
           </button>
         </form>
 
         <div className="space-y-4 text-sm text-neutral-500">
           <p>
-            <span className="font-semibold text-neutral-900 dark:text-white">E-posta:</span>{" "}
+            <span className="font-semibold text-neutral-900 dark:text-white">Email:</span>{" "}
             <a href={`mailto:${siteConfig.contact.email}`} className="hover:underline">
               {siteConfig.contact.email}
             </a>
           </p>
           <p>
-            <span className="font-semibold text-neutral-900 dark:text-white">Adres:</span>{" "}
+            <span className="font-semibold text-neutral-900 dark:text-white">Address:</span>{" "}
             {siteConfig.contact.address}
           </p>
           {/* Harita / ek görsel alanı */}

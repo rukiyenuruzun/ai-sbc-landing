@@ -6,9 +6,9 @@ export default function SbcAccessories() {
   return (
     <section id="sbc" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-20">
       <SectionHeading
-        eyebrow="SBC & Aksesuar"
-        title="Single Board Computer ve Aksesuarları"
-        subtitle="SBC'ler, genişletme kartları, kasalar ve tüm aksesuarlar."
+        eyebrow="SBC & Accessories"
+        title="Single Board Computers & Accessories"
+        subtitle="SBCs, expansion boards, cases and all the accessories around them."
       />
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {sbcProducts.map((p) => (

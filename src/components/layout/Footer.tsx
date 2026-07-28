@@ -25,8 +25,8 @@ export default function Footer() {
           </a>
         </div>
 
-        <nav aria-label="Alt menü">
-          <p className="text-sm font-semibold">Bağlantılar</p>
+        <nav aria-label="Footer navigation">
+          <p className="text-sm font-semibold">Links</p>
           <ul className="mt-2 space-y-1">
             {navLinks.map((link) => (
               <li key={link.href}>
@@ -39,7 +39,7 @@ export default function Footer() {
         </nav>
 
         <div>
-          <p className="text-sm font-semibold">Sosyal</p>
+          <p className="text-sm font-semibold">Social</p>
           <ul className="mt-2 space-y-1">
             {siteConfig.socials.map((s) => (
               <li key={s.label}>
@@ -54,7 +54,7 @@ export default function Footer() {
 
       <div className="border-t border-neutral-200 py-4 text-center dark:border-neutral-800">
         <p className="text-xs text-neutral-500">
-          © {new Date().getFullYear()} {siteConfig.legalName}. Tüm hakları saklıdır.
+          © {new Date().getFullYear()} {siteConfig.legalName}. All rights reserved.
         </p>
         <p className="mt-1 text-[10px] text-neutral-400">
           {siteConfig.activities.primary} · {siteConfig.activities.secondary}

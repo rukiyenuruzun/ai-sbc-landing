@@ -6,9 +6,9 @@ export default function About() {
     <section id="about" className="scroll-mt-20 bg-neutral-50 py-20 dark:bg-neutral-900/40">
       <div className="mx-auto max-w-6xl px-4">
         <SectionHeading
-          eyebrow="Hakkımızda"
-          title="Neden Biz?"
-          subtitle="Şirket hikâyesi ve değer önerisi buraya gelecek."
+          eyebrow="About"
+          title="Why Velora?"
+          subtitle="Company story and value proposition go here."
         />
 
         {/* İstatistik şeridi */}

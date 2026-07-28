@@ -13,13 +13,13 @@ export default function Hero() {
           href="#ai-hardware"
           className="rounded-lg bg-orange-600 px-6 py-3 font-medium text-white hover:bg-orange-500"
         >
-          Ürünleri Keşfet
+          Explore Products
         </a>
         <a
           href="#contact"
           className="rounded-lg border border-neutral-300 px-6 py-3 font-medium hover:bg-neutral-100 dark:border-neutral-700 dark:hover:bg-neutral-900"
         >
-          Bize Ulaşın
+          Contact Us
         </a>
       </div>
 
