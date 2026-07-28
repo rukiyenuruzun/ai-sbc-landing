@@ -3,7 +3,7 @@ import { navLinks, siteConfig } from "@/data/site";
 export default function Footer() {
   return (
     <footer className="overflow-hidden border-t border-paper/15">
-      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:grid-cols-3">
+      <div className="grid gap-10 px-6 py-14 sm:grid-cols-3 sm:px-10 lg:px-16">
         <div>
           <p className="text-xs uppercase tracking-[0.2em] text-accent">Velora Tech Limited</p>
           <p className="mt-3 max-w-xs text-xs leading-relaxed text-paper/60">
@@ -59,7 +59,7 @@ export default function Footer() {
         VELORA
       </p>
 
-      <div className="flex flex-col items-center justify-between gap-2 border-t border-paper/15 px-5 py-4 text-[10px] uppercase tracking-[0.2em] text-paper/40 sm:flex-row">
+      <div className="flex flex-col items-center justify-between gap-2 border-t border-paper/15 px-6 py-4 text-[10px] uppercase tracking-[0.2em] text-paper/40 sm:flex-row sm:px-10 lg:px-16">
         <span>
           © {new Date().getFullYear()} {siteConfig.legalName}
         </span>

@@ -8,7 +8,7 @@ const inputClass =
 
 export default function Contact() {
   return (
-    <section id="contact" className="mx-auto max-w-6xl scroll-mt-20 px-5 py-24">
+    <section id="contact" className="scroll-mt-20 px-6 py-24 sm:px-10 lg:px-16">
       <Reveal>
         <SectionHeading
           eyebrow="Contact"

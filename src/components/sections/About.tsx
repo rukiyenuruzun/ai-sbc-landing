@@ -15,13 +15,13 @@ export default function About() {
           alt=""
           fill
           sizes="100vw"
-          className="object-cover object-center opacity-25 grayscale contrast-125 mix-blend-luminosity"
+          className="object-cover object-top opacity-45 grayscale contrast-125 mix-blend-luminosity"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-ink via-ink/35 to-ink" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink via-ink/15 to-ink" />
         <div className="absolute inset-0 bg-gradient-to-r from-ink via-transparent to-ink" />
       </div>
 
-      <div className="relative mx-auto max-w-6xl px-5">
+      <div className="relative px-6 sm:px-10 lg:px-16">
         <Reveal>
           <SectionHeading
             eyebrow="About"
