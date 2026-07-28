@@ -9,7 +9,6 @@ export default function About() {
       <div className="mx-auto max-w-6xl px-5">
         <Reveal>
           <SectionHeading
-            number="04"
             eyebrow="About"
             title="Why Velora?"
             subtitle="Company story and value proposition go here."

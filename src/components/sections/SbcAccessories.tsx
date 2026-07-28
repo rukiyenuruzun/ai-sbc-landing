@@ -1,5 +1,5 @@
 import SectionHeading from "@/components/ui/SectionHeading";
-import ProductCard from "@/components/ui/ProductCard";
+import ExpandingPanels from "@/components/ui/ExpandingPanels";
 import Reveal from "@/components/ui/Reveal";
 import { sbcProducts } from "@/data/site";
 
@@ -8,19 +8,14 @@ export default function SbcAccessories() {
     <section id="sbc" className="mx-auto max-w-6xl scroll-mt-20 px-5 py-24">
       <Reveal>
         <SectionHeading
-          number="03"
           eyebrow="SBC & Accessories"
           title="Single Board Computers & Accessories"
           subtitle="SBCs, expansion boards, cases and all the accessories around them."
         />
       </Reveal>
-      <div className="mt-12 grid gap-px sm:grid-cols-2 lg:grid-cols-3">
-        {sbcProducts.map((p, i) => (
-          <Reveal key={p.id} delay={i * 0.08}>
-            <ProductCard product={p} />
-          </Reveal>
-        ))}
-      </div>
+      <Reveal delay={0.1} className="mt-12">
+        <ExpandingPanels items={sbcProducts} />
+      </Reveal>
     </section>
   );
 }

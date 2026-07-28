@@ -11,7 +11,6 @@ export default function Contact() {
     <section id="contact" className="mx-auto max-w-6xl scroll-mt-20 px-5 py-24">
       <Reveal>
         <SectionHeading
-          number="05"
           eyebrow="Contact"
           title="Get in Touch"
           subtitle="Reach out for your projects and product inquiries."
