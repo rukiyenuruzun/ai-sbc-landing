@@ -29,6 +29,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      // Next 16: global scroll-behavior:smooth kullanılıyorsa router'ın bunu
+      // navigasyonlarda koordine etmesi için bu attribute gerekli (upgrade guide).
+      data-scroll-behavior="smooth"
       className={`${display.variable} ${mono.variable} h-full scroll-smooth antialiased`}
     >
       <body className="grain min-h-full flex flex-col bg-ink text-paper">{children}</body>

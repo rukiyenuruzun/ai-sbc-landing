@@ -53,7 +53,9 @@ export default function Footer() {
       {/* Dev wordmark — ekran genişliğini kaplar */}
       <p
         aria-hidden
-        className="select-none text-center font-display leading-[0.8] text-paper/90"
+        // leading-[0.8]: dev fontun satır içi kutusu blok kutusunun üstüne taşıp
+        // üstteki linklerin tıklamasını yutuyor — pointer-events-none şart.
+        className="pointer-events-none select-none text-center font-display leading-[0.8] text-paper/90"
         style={{ fontSize: "clamp(4rem, 17.5vw, 16rem)" }}
       >
         VELORA

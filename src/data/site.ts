@@ -12,7 +12,7 @@ export const siteConfig = {
     svg: "/velora-logo.svg",
   },
   // Geçici görseller — kaynak ve lisanslar: public/images/CREDITS.md
-  heroImage: "/images/hero-statue.png",
+  heroImage: "/images/hero-engraving.png",
   contactImage: "/images/contact-hk.jpg",
   contact: {
     email: "hello@velora.com.hk",

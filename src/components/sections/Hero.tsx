@@ -20,6 +20,8 @@ export default function Hero() {
           sizes="(min-width: 1024px) 62vw, 100vw"
           className="object-contain object-right opacity-30 brightness-90 grayscale invert mix-blend-screen [mask-image:linear-gradient(to_left,black_60%,transparent_100%)] lg:opacity-80"
         />
+        {/* Üstte ink'e eriyen geçiş — navbar yazıları desenin üzerinde kaybolmasın */}
+        <div className="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-ink via-ink/70 to-transparent" />
       </div>
 
       <div className="relative z-10 w-full px-6 pb-20 pt-36 sm:px-10 lg:px-16">
